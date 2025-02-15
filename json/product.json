@@ -1,0 +1,72 @@
+[
+    {
+        "id":"1",
+        "title": "burger",
+        "image": "/productImages/burger-1.jpg",
+        "category": "burger",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"2",
+        "title": "coc",
+        "image": "/productImages/coc-1.jpg",
+        "category": "coc",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"3",
+        "title": "pizza",
+        "image": "/productImages/pizza-1.jpg",
+        "category": "pizza",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"4",
+        "title": "burger",
+        "image": "/productImages/burger-2.jpg",
+        "category": "burger",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"5",
+        "title": "coc",
+        "image": "/productImages/coc-2.jpg",
+        "category": "coc",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"6",
+        "title": "pizza",
+        "image": "/productImages/pizza-2.jpg",
+        "category": "pizza",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"7",
+        "title": "burger",
+        "image": "/productImages/burger-3.jpg",
+        "category": "burger",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"8",
+        "title": "coc",
+        "image": "/productImages/coc-3.jpg",
+        "category": "coc",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"9",
+        "title": "burger",
+        "image": "/productImages/burger-3.jpg",
+        "category": "burger",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    },
+    {
+        "id":"10",
+        "title": "pizza",
+        "image": "/productImages/pizza-4.jpg",
+        "category": "pizza",
+        "content": "Sink your teeth into a delicious restaurant-style, hamburger recipe made from lean beef. Skip the prepackaged patties and take the extra time to craft up your own, and that little extra effort will be worth it. To make cheeseburgers, about 1 minute before burgers are done, top with sliced cheese; continue cooking until cheese begins to melt."
+    }
+]

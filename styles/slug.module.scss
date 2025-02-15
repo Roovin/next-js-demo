@@ -1,0 +1,15 @@
+@import './common/variables.scss';
+@import './common/media-queries.module.scss';
+.slug {
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    .check {
+        position: relative;
+        display: inline-block;
+        background-color: red;
+        color: #ffffff;
+        padding: 10px 8px;
+        border-radius: 10px;
+    }
+}

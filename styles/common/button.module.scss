@@ -1,0 +1,484 @@
+@import './media-queries.module.scss';
+@import './variables.scss';
+@import './common/global.scss';
+/* Buttons placeholder */
+
+%default-btn {
+  color: $white;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 35px;
+  line-height: 1.33;
+  display: inline-block;
+  background-color: $baby-shit-green;
+
+  span,
+  .button {
+    position: relative;
+    left: 0;
+    font-family: $font-family-DMSans;
+    transition: left 0.2s ease-in-out;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 13.1px;
+      height: 15px;
+      right: -20px;
+      top: 50%;
+      opacity: 0;
+      transform: translateY(-50%);
+      transition: opacity 0.2s ease-in-out;
+      background: url('/themes/trs/templates/dist/images/svg/whiteTriangle.svg') no-repeat;
+    }
+  }
+  &:hover {
+    span,
+    .button {
+      left: -8px;
+      &::after {
+        opacity: 1;
+      }
+      @include tablet-down {
+        left: 0;
+        &::after {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  @include large-container-down {
+    font-size: 18px;
+  }
+}
+
+// Link-button
+%link-btn {
+  color: $firefly;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.67;
+  padding-right: 20px;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 13px;
+    height: 15px;
+    background: url('/themes/trs/templates/dist/images/svg/citrus_triangle.svg') no-repeat;
+    background-size: cover;
+    transform: translateY(-50%);
+    transition: right 0.2s ease-in-out;
+  }
+  &:hover {
+    &::after {
+      right: -8px;
+    }
+  }
+  @include large-container-down {
+    font-size: 18px;
+    line-height: 1.88;
+  }
+}
+
+//Inline-text-link
+%inline-text-link {
+  color: $firefly;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  position: relative;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    background: $citrus;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+  @include large-container-down {
+    font-size: 16px;
+    line-height: 1.67;
+  }
+}
+
+// Submit button
+%white-triangle-btn {
+  cursor: pointer;
+  background-color: $citrus;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  span {
+    display: block;
+    position: relative;
+    left: 2px;
+    width: 13px;
+    height: 13px;
+    margin: auto;
+    background: url('/themes/trs/templates/dist/images/svg/white-triangle.svg') no-repeat center;
+    background-size: cover;
+    transition: transform 0.2s ease-in-out;
+    font-size: 0;
+    color: transparent;
+    @include large-container-down {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  &:hover {
+    span {
+      transform: scale(1.5);
+    }
+  }
+  @include large-container-down {
+    width: 41px;
+    height: 41px;
+  }
+}
+
+%slick-arrow {
+  cursor: pointer;
+  width: 27px;
+  height: 30px;
+  font-size: 0;
+  border: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  outline: none;
+  @media (min-width: 992px) and (max-width: 1270px) {
+    width: 22px;
+    height: 25px;
+  }
+  @include tablet {
+    width: 18px;
+    height: 21px;
+  }
+  @include tablet-down {
+    width: 16px;
+    height: 18px;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    transition: transform 0.15s ease-in-out;
+  }
+
+  &.slick-disabled {
+    opacity: 0.5;
+    cursor: default;
+
+    &:hover {
+      &:after {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+// Default-button
+.btn-primary {
+  @extend %default-btn;
+}
+
+.white-btn-primary {
+  @extend %default-btn;
+  background-color: $white;
+  color: $citrus;
+  span {
+    &:after {
+      background: url('/themes/trs/templates/dist/images/svg/citrus_triangle.svg') no-repeat;
+    }
+  }
+}
+
+.red-primary-btn {
+  @extend %default-btn;
+  color: $white;
+  background-color: $red;
+  span {
+    &::after {
+      background: url('/themes/trs/templates/dist/images/svg/whiteTriangle.svg') no-repeat;
+    }
+  }
+}
+
+.btn-secondary {
+  @extend %default-btn;
+  padding: 11px 35px;
+  background-color: transparent;
+  border: solid 2px $baby-shit-green;
+  span {
+    color: $baby-shit-green;
+    &:after {
+      background: url('/themes/trs/templates/assets/images/svg/greenTriangle.svg') no-repeat center;
+    }
+  }
+}
+
+.btn-tertiary {
+  display: inline-block;
+  padding: 8px 40px;
+  background-color: transparent;
+  border: 2px solid $baby-shit-green;
+  color: $firefly;
+  font-size: 20px;
+  line-height: 1.33;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  @include large_container_down {
+    padding: 7px 39px;
+    font-size: 18px;
+  }
+  @include desktop-down {
+    padding: 6px 34px;
+  }
+
+  span,
+  strong {
+    display: block;
+    color: $firefly;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    background-color: $baby-shit-green;
+
+    span,
+    strong {
+      color: $white;
+    }
+  }
+
+  &.disabled {
+    background-color: $silver;
+    border-color: $silver;
+    color: $warm-grey;
+
+    &:hover {
+      background-color: $silver;
+      border-color: $silver;
+      color: $warm-grey;
+
+      span,
+      strong {
+        color: $warm-grey;
+      }
+    }
+  }
+}
+
+// Text Links
+.text-link {
+  @extend %link-btn;
+}
+
+.white-text-link {
+  @extend %link-btn;
+  color: $white;
+}
+
+.inline-text-link {
+  @extend %inline-text-link;
+}
+
+.inline-text-link-sm {
+  @extend %inline-text-link;
+  font-size: 18px;
+  @include large-container-down {
+    font-size: 14px;
+  }
+}
+
+// Red Buttons
+.red-link-btn {
+  @extend %link-btn;
+  &::after {
+    background: url('/themes/trs/templates/dist/images/svg/red-triangle.svg') no-repeat;
+  }
+}
+
+.red-inline-text-link {
+  @extend %inline-text-link;
+  &:after {
+    background: $red;
+  }
+}
+
+.red-inline-text-link-sm {
+  @extend %inline-text-link;
+  &:after {
+    background: $red;
+  }
+  font-size: 18px;
+  @include large-container-down {
+    font-size: 14px;
+  }
+}
+
+.submit-btn {
+  @extend %white-triangle-btn;
+}
+
+.full-card-hover {
+  &:hover {
+    .text-link {
+      &::after {
+        right: -8px;
+      }
+    }
+  }
+}
+
+// Read More Button
+.read-more {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  @include large-container-down {
+    font-size: 18px;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: -22px;
+    top: 50%;
+    background: url('/themes/trs/templates/dist/images/svg/plus_icon.svg') no-repeat center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    transition: right 0.2s ease-in-out, opacity 0.3s ease-in-out;
+    @include large-container-down {
+      width: 13px;
+      height: 13px;
+      right: -20px;
+    }
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    right: -22px;
+    top: 50%;
+    background: url('/themes/trs/templates/dist/images/svg/minus_icon.svg') no-repeat center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    transition: right 0.2s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+    @include large-container-down {
+      width: 13px;
+      height: 13px;
+      right: -20px;
+    }
+  }
+
+  &:hover {
+    &:after,
+    &::before {
+      right: -30px;
+      @include large-container-down {
+        right: -28.5px;
+      }
+    }
+  }
+  &.read-less {
+    &:before {
+      height: 0;
+    }
+  }
+  &.active {
+    &:before {
+      opacity: 1;
+    }
+    &:after {
+      opacity: 0;
+    }
+  }
+}
+
+// Slick Buttons
+.slick-prev {
+  @extend %slick-arrow;
+  &::after {
+    background: url('/themes/trs/templates/dist/images/svg/left-triangle-arrow.svg') no-repeat center;
+    background-size: contain;
+  }
+  &:hover {
+    &:after {
+      transform: translateX(-8px);
+    }
+  }
+}
+
+.slick-next {
+  @extend %slick-arrow;
+  &::after {
+    background: url('/themes/trs/templates/dist/images/svg/right-triangle-arrow.svg') no-repeat center;
+    background-size: contain;
+  }
+  &:hover {
+    &:after {
+      transform: translateX(8px);
+    }
+  }
+}
+
+// Hover removed on tablet-down slick-arrow
+.slick-prev,
+.slick-next {
+  @include tablet-down {
+    &:hover {
+      &::after {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+// Drupal load more button
+.js-pager__items[data-drupal-views-infinite-scroll-pager] {
+  .pager__item {
+    @extend %default-btn;
+    margin: 0;
+    &::before {
+      display: none;
+    }
+    .button {
+      color: $white;
+    }
+  }
+}
+
+// Disable button
+.disabled-btn {
+  // pointer-events: none;
+  border: 1px solid $gray60;
+  background-color: $gray90;
+  color: $lightgray;
+  cursor: default;
+  span {
+    left: 0 !important;
+    &::after {
+      display: none;
+    }
+  }
+}

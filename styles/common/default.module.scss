@@ -1,0 +1,344 @@
+// @import 'media-queries.module.scss';
+// @import 'variables.module.scss';
+
+// // * {
+// //   margin: 0;
+// //   padding: 0;
+// //   box-sizing: border-box;
+// //   -webkit-tap-highlight-color: transparent;
+// //   -webkit-font-smoothing: antialiased;
+// // }
+
+// // html {
+// //   overflow: auto;
+// // }
+
+// // body {
+// //   // font-family: $font-family-DMSans;
+// //   // background-color: $white-silver;
+// // }
+
+
+
+// .container {
+//   width: 100%;
+//   margin: 0 auto;
+//   padding: 0 20px;
+//   max-width: 1330px;
+//   position: relative;
+//   z-index: 1;
+//   @include large-container-down {
+//     max-width: 1100px;
+//   }
+// }
+
+
+
+// /* Text Alignment. */
+// .text-left {
+//   text-align: left !important;
+// }
+
+// .text-right {
+//   text-align: right !important;
+// }
+
+// .text-center {
+//   text-align: center;
+// }
+
+// /* Flex classes */
+// .row {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   position: relative;
+// }
+
+// .col-wrap {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// .col-two {
+//   flex: 0 0 50%;
+// }
+
+// .col-three {
+//   flex: 0 0 33.33%;
+// }
+
+// .col-four {
+//   flex: 0 0 25%;
+// }
+
+// // Font size classes
+// .large {
+//   font-size: 38px;
+//   @include desktop-down {
+//     font-size: 34px;
+//   }
+//   @include tablet-down {
+//     font-size: 30px;
+//   }
+//   span {
+//     font-size: 38px;
+//     @include desktop-down {
+//       font-size: 34px;
+//     }
+//     @include tablet-down {
+//       font-size: 30px;
+//     }
+//   }
+// }
+
+// .medium {
+//   font-size: 34px;
+//   @include desktop-down {
+//     font-size: 30px;
+//   }
+//   @include tablet-down {
+//     font-size: 26px;
+//   }
+//   span {
+//     font-size: 34px;
+//     @include desktop-down {
+//       font-size: 30px;
+//     }
+//     @include tablet-down {
+//       font-size: 26px;
+//     }
+//   }
+// }
+
+// .small {
+//   font-size: 30px;
+//   @include desktop-down {
+//     font-size: 26px;
+//   }
+//   @include tablet-down {
+//     font-size: 22px;
+//   }
+//   span {
+//     font-size: 30px;
+//     @include desktop-down {
+//       font-size: 26px;
+//     }
+//     @include tablet-down {
+//       font-size: 22px;
+//     }
+//   }
+// }
+
+// // img:-moz-loading {
+// //   visibility: hidden;
+// // }
+
+// .scroll-reveal {
+//   opacity: 0;
+
+//   &.is-revealed {
+//     opacity: 1;
+//   }
+// }
+
+// .link-hover {
+//   &:after {
+//     content: attr(data-hover);
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 0;
+//     overflow: hidden;
+//     white-space: nowrap;
+//     transition: all 0.6s cubic-bezier(0.86, 0, 0.07, 1);
+//   }
+// }
+
+// #home_icon1_loop,
+// #home_icon2_loop,
+// #home_icon3_loop,
+// #about_icon1_loop,
+// #about_icon2_loop,
+// #about_icon3_loop,
+// #about_icon4_loop {
+//   display: none;
+// }
+
+// //Play-icon
+// .play-icon {
+//   cursor: pointer;
+//   width: 82px;
+//   height: 82px;
+//   border-radius: 50%;
+//   overflow: hidden;
+//   position: relative;
+//   display: block;
+//   transition: transform 0.3s ease-in-out;
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 50%;
+//     background: url('/themes/trs/templates/dist/images/svg/play_circle_icon.svg') no-repeat center;
+//     background-size: cover;
+//   }
+//   &:hover {
+//     transform: scale(1.3);
+//   }
+//   @include large-container-down {
+//     max-width: 61px;
+//     max-height: 61px;
+//   }
+// }
+
+// // bottom-line
+// .bottom-line {
+//   position: relative;
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: -3px;
+//     width: 0;
+//     height: 2px;
+//     background: $citrus;
+//     border-radius: 5px;
+//     transition: width 0.3s ease-in-out;
+//   }
+//   &:hover {
+//     &::after {
+//       width: 100%;
+//     }
+//   }
+// }
+
+// //slick opacity
+// .slick-initialized {
+//   opacity: 1 !important;
+// }
+
+// // Drupal Pagination
+// .js-pager__items {
+//   margin: 50px 0 0 0;
+//   padding-left: 0;
+//   text-align: center;
+//   @include large-container-down {
+//     margin-top: 30px;
+//   }
+//   @include phablet-down {
+//     margin-top: 20px;
+//   }
+// }
+
+// // Empty links
+// .empty-link {
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: 100%;
+//   height: 100%;
+//   color: transparent;
+//   font-size: 0;
+//   opacity: 0;
+//   z-index: 2;
+// }
+
+// //Empty label
+// .empty-label {
+//   color: transparent;
+//   font-size: 0;
+//   opacity: 0;
+//   position: absolute;
+// }
+
+// //Stop scroll
+// .stop-scroll {
+//   @include desktop-down {
+//     overflow: hidden;
+//   }
+// }
+
+// // Border-top Citrus
+// .citrus-top-border {
+//   border-top: 5px solid $citrus;
+// }
+// //citrus-top-bar
+// .citrus-top-bar {
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     height: 5px;
+//     width: calc(100% + 4px);
+//     left: -2px;
+//     top: 0;
+//     background: $citrus;
+//   }
+// }
+// //red-border-top
+// .red-border-top {
+//   &::after {
+//     content: '';
+//     position: absolute;
+//     height: 5px;
+//     width: calc(100% + 4px);
+//     left: -2px;
+//     top: 0;
+//     background: $red;
+//   }
+// }
+
+// //Bottom-divider
+// .bottom-divider-line {
+//   &:after {
+//     content: '';
+//     position: absolute;
+//     max-width: 1290px;
+//     background: $white-grey;
+//     width: calc(100% - 40px);
+//     height: 2px;
+//     bottom: 0;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     @include large-container-down {
+//       max-width: 1060px;
+//     }
+//   }
+// }
+
+// .parallax-overlap {
+//   overflow: visible;
+
+//   .container {
+//     margin-top: -146px;
+//     @include container-down {
+//       margin-top: -110px;
+//     }
+//   }
+// }
+
+// .daterangepicker td.in-range {
+//   background-color: rgba(152, 21, 46, 0.2);
+// }
+
+// .daterangepicker td.available:hover {
+//   background-color: $blue;
+//   color: $white;
+// }
+
+// .daterangepicker td.active,
+// .daterangepicker td.active:hover {
+//   background-color: $blue;
+// }
+
+
+
+// #block-trs-content {
+//   @media (min-width: 992px) and (max-width: 1270px) {
+//     margin-top: 5px;
+//   }
+// }

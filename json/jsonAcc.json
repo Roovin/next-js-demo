@@ -1,0 +1,12 @@
+[
+    {
+        "id":"1",
+        "title":"This is a simple question?",
+        "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur ab quaerat deleniti vero praesentium iste beatae iusto harum sit!"
+    },
+    {
+        "id":"2",
+        "title":"Is there 24/7 customer support?",
+        "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet consequuntur ab quaerat deleniti vero praesentium iste beatae iusto harum sit!"
+    }
+]

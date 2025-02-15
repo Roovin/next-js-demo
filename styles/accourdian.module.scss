@@ -1,0 +1,66 @@
+@import './common/variables.scss';
+@import './common/media-queries.module.scss';
+
+.ac_wrap {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    @include phablet-down {
+        padding: 30px 0 0;
+    }
+    @include phablet {
+        padding: 40px 0 0;
+    }
+    .itemWrap {
+        position: relative;
+        max-width: 800px;
+        width: 100%;
+        // margin: 0 auto;
+    }
+    .item {
+        position: relative;
+        width: 100%;
+        margin-bottom: 30px;
+        background-color: #bdc4cc;
+        padding: 20px;
+        &.active {
+            .contentWrap {
+                height: 100%;
+                opacity: 1;
+                visibility: visible;
+                p {
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .titleWrap {
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+        h2 {
+            color: $white;
+            font-size: 40px;
+            @include phablet-down {
+                font-size: 20px;
+            }
+            @include phablet {
+                font-size: 26px;
+            }
+        }
+    }
+    .contentWrap {
+        position: relative;
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        margin-top: 20px;
+        transition: height 0.3s ease-in-out;
+        p {
+            // padding: 20px;
+            height: 0;
+            font-size: 14px;
+        }
+    }
+}

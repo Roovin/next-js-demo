@@ -1,0 +1,19 @@
+@import './common/variables.scss';
+@import './common/media-queries.module.scss';
+.heroBanner {
+    position: relative;
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .bgImg {
+        position: relative;
+        width: 100%;
+    }
+}
+.cardDetail {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+}

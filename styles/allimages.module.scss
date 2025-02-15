@@ -1,0 +1,17 @@
+.allImages {
+    position: relative;
+    width: 100%;
+    padding: 150px 0;
+    .cardImagWrap {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imgWrap {
+        position: relative;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 5px 5px;
+        height: 100%;
+    }
+}

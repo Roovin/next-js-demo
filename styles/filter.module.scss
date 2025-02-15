@@ -1,0 +1,189 @@
+@import './common/variables.scss';
+@import './common/media-queries.module.scss';
+// @import './common/global.scss';
+.fltList {
+    position: relative;
+    width: 100%;
+    padding: 50px 0;
+    overflow: visible;
+    .fltWrapper {
+        position: relative;
+        max-width: 300px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .fltWrap {
+        position: relative;
+        max-width: 300px;
+        width: 100%;
+        margin: 0 auto;
+        input {
+            padding: 10px;
+            max-width: 300px;
+            width: 100%;
+            cursor: pointer;
+            outline: none;
+        }
+
+    }
+    .ulList {
+        // position: relative;
+        // width: 100%;
+        position: absolute;
+            top: auto;
+            left: 0;
+            width: 100%;
+            // height: 0;
+            padding: 10px;
+            overflow: hidden;
+            visibility: hidden;
+            background-color: red;
+            transition: all 0.3s ease-in-out;
+            z-index: 99;
+        &.active { 
+            overflow: visible;
+            visibility: visible;
+        }
+        ul {
+            position: relative;
+            li {
+                position: relative;
+                display: flex;
+                align-items: center;
+                margin: 10px 0;
+                cursor: pointer;
+                input {
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 10px;
+                    width: 20px;
+                    height: 20px;
+                }
+                label {
+                    position: relative;
+                    color: #ffffff;
+                    font-size: 18px;
+                }
+            }
+        }
+            
+    }
+    
+    .selectLi {
+        position: relative;
+        width: 100%;
+        ul {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            li {
+                position: relative;
+                padding: 8px 40px 8px 20px;
+                background-color: #f5f5f5;
+                border-radius: 100px;
+                cursor: pointer;
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+                .closeButton {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    width: 10px;
+                    height: 10px;
+                    display: inline-block;
+                    transform: translateY(-50%);
+                    font-size: 0;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        right: 10px;
+                        width: 10px;
+                        height: 10px;
+                        background: url("../public/filter/Close.svg") no-repeat;
+                        background-size: cover;
+                        transform: translateY(-50%);
+                    }
+                }
+              
+                p {
+                    font-size: 20px;
+                    text-transform: capitalize;;
+                }
+            }
+        }
+    }
+  .ModalContainer {
+    position: relative;
+  }
+  .isChecked {
+    position: relative;
+  }
+}
+.filterCard {
+    position: relative;
+    width: 100%;
+    padding: 100px 0;
+    .cardWrap {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        // align-items: center;
+    }
+    .card {
+        position: relative;
+        width: calc(33.33% - 30px);
+        flex: 0 0 calc(33.33% - 30px);
+        margin: 0 15px 20px;
+        padding: 20px;
+        background-color: green;
+        .imgWrap {
+            position: relative;
+            max-width: 300px;
+            width: 100%;
+            max-height: 200px;
+            height: 100%;
+        }
+    }
+    .contentWrap {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+        h4 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    .pagination {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        ul {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            li {
+                position: relative;
+                // cursor: pointer;
+                font-size: 20px;
+                padding: 10px;
+                background-color: red;
+                color: #ffffff;
+                border-radius: 10px;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+  
+}

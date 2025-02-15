@@ -1,0 +1,86 @@
+// @import './globals.scss';
+/* Base colors*/
+$white: #ffffff;
+$black: #000000;
+$baby-shit-green: #929c1a;
+$purple: #323c93;
+$blue: #2a348e;
+$citrus: #b3c205;
+$pale: #8f9ebc;
+$firefly: #151e28;
+$white-grey: #efefef;
+$light-grey: #dbd9d6;
+$davy-grey: #435363;
+$silver: #c3c6c8;
+$warm-grey: #7c7c7c;
+$white-silver: #f7f7f7;
+$charcoal: #434343;
+$dark-gray: #adadad;
+$iris-blue: #00aec5;
+$iris: #726cc4;
+$royal-blue: #2a4980;
+$gray92: #ebebeb;
+$red: #e90029;
+$lemon: #f0f3cd;
+$lightgray: #666666;
+$gray90: #cccccc;
+$gray60: #999999;
+$light-green: #009c73;
+$ocean-blue: #009bea;
+$medium-persian-blue: #006699;
+$cerulean: #00afd7;
+$persian-blue: #003366;
+$persian-indigo: #330066;
+$navy-blue: #0066cc;
+$slate-grey: #435363;
+$light-brown: #f2f2f1;
+$primary3: #e4e0e0;
+$light-black: #151e28;
+$blue-yonder: #7076B3;
+$pewter-blue: #8f9ebc;
+$dark-jungle-blue: #151e28;
+
+$colors: (
+  'white',
+  $white,
+  'blue',
+  $blue,
+  'black',
+  $black,
+  'baby-shit-green',
+  $baby-shit-green,
+  'purple',
+  $purple,
+  'citrus',
+  $citrus,
+  'white-grey',
+  $white-grey,
+  'firefly',
+  $firefly,
+  'light-grey',
+  $light-grey,
+  'davy-grey',
+  $davy-grey,
+  'silver',
+  $silver,
+  'pale',
+  $pale,
+  'lightgray',
+  $lightgray,
+  'red',
+  $red
+);
+
+$font-family-DMSans: 'DMSans', sans-serif;
+
+/*  Media query variables */
+$phone_width: 481px;
+$phablet_width: 596px;
+$tablet_width: 768px;
+$desktop_width: 992px;
+$desktop_mid_width: 1024px;
+$psd_width: 1600px;
+$container_width: 1336px;
+$large_container_width: 1270px;
+$orientation: landscape;
+$mid-large-desktop: 1150px;

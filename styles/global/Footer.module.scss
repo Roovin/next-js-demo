@@ -1,0 +1,61 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #151831;
+    padding: 40px 0;
+    .outerWrapper {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+    .socialWrapper {
+        position: relative;
+        max-width: 201px;
+        width: 100%;
+    }
+    .logoWrap {
+        position: relative;
+        max-width: 150px;
+        width: 100%;
+        img {
+            border-radius: 20px;
+        }
+    }
+    .address {
+        position: relative;
+        width: 100%;
+        margin-top: 30px;
+        p {
+            color: #ffffff;
+            margin: 10px 0;
+        }
+    }
+    .follow {
+        position: relative;
+        width: 100%;
+        margin: 80px 0 20px;
+        p {
+            color: #5ac8fa;
+            font-size: 16px;
+        }
+    }
+    .socialWrap {
+        position: relative;
+        width: 100%;
+        
+        display: flex;
+        .socialIcon {
+            position: relative;
+            max-width: 22px;
+            width: 100%;
+            height: 20px;
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+            img {
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,301 @@
+// // @import 'variables';
+// @import 'media-queries';
+// @import 'variables';
+// //Padding Classes
+
+// //1.Padding-xxl
+// .padding-xxl {
+//   padding: 112px 0 !important;
+//   @include desktop {
+//     padding: 90px 0 !important;
+//   }
+//   @include tablet {
+//     padding: 65px 0 !important;
+//   }
+//   @include tablet-down {
+//     padding: 45px 0 !important;
+//   }
+// }
+
+// .padding-top-xxl {
+//   padding-top: 112px !important;
+//   @include desktop {
+//     padding-top: 90px !important;
+//   }
+//   @include tablet {
+//     padding-top: 65px !important;
+//   }
+//   @include tablet-down {
+//     padding-top: 45px !important;
+//   }
+// }
+
+// .padding-bottom-xxl {
+//   padding-bottom: 112px !important;
+//   @include desktop {
+//     padding-bottom: 90px !important;
+//   }
+//   @include tablet {
+//     padding-bottom: 65px !important;
+//   }
+//   @include tablet-down {
+//     padding-bottom: 45px !important;
+//   }
+// }
+
+// //2.padiing-xl
+// .padding-xl {
+//   padding: 88px 0 !important;
+//   @include desktop {
+//     padding: 70px 0 !important;
+//   }
+//   @include tablet {
+//     padding: 45px 0 !important;
+//   }
+//   @include tablet-down {
+//     padding: 30px 0 !important;
+//   }
+// }
+
+// .padding-top-xl {
+//   padding-top: 88px !important;
+//   @include desktop {
+//     padding-top: 70px !important;
+//   }
+//   @include tablet {
+//     padding-top: 45px !important;
+//   }
+//   @include tablet-down {
+//     padding-top: 30px !important;
+//   }
+// }
+
+// .padding-bottom-xl {
+//   padding-bottom: 88px !important;
+//   @include desktop {
+//     padding-bottom: 70px !important;
+//   }
+//   @include tablet {
+//     padding-bottom: 45px !important;
+//   }
+//   @include tablet-down {
+//     padding-bottom: 30px !important;
+//   }
+// }
+
+// //3.padding-lg
+// .padding-lg {
+//   padding: 64px 0 !important;
+//   @include desktop {
+//     padding: 50px !important;
+//   }
+//   @include tablet {
+//     padding: 40px !important;
+//   }
+//   @include tablet-down {
+//     padding: 25px 0 !important;
+//   }
+// }
+
+// .padding-top-lg {
+//   padding-top: 64px !important;
+//   @include desktop {
+//     padding-top: 50px !important;
+//   }
+//   @include tablet {
+//     padding-top: 40px !important;
+//   }
+//   @include tablet-down {
+//     padding-top: 25px !important;
+//   }
+// }
+
+// .padding-bottom-lg {
+//   padding-bottom: 64px !important;
+//   @include desktop {
+//     padding-bottom: 50px !important;
+//   }
+//   @include tablet {
+//     padding-bottom: 40px !important;
+//   }
+//   @include tablet-down {
+//     padding-bottom: 25px !important;
+//   }
+// }
+
+// //4. padding-md
+// .padding-md {
+//   padding: 48px 0 !important;
+//   @include desktop {
+//     padding: 35px 0 !important;
+//   }
+//   @include tablet {
+//     padding: 25px 0 !important;
+//   }
+//   @include tablet-down {
+//     padding: 20px 0 !important;
+//   }
+// }
+
+// .padding-top-md {
+//   padding-top: 48px !important;
+//   @include desktop {
+//     padding-top: 35px !important;
+//   }
+//   @include tablet {
+//     padding-top: 25px !important;
+//   }
+//   @include tablet-down {
+//     padding-top: 20px !important;
+//   }
+// }
+
+// .padding-bottom-md {
+//   padding-bottom: 48px !important;
+//   @include desktop {
+//     padding-bottom: 35px !important;
+//   }
+//   @include tablet {
+//     padding-bottom: 25px !important;
+//   }
+//   @include tablet-down {
+//     padding-bottom: 20px !important;
+//   }
+// }
+
+// //5.padding-sm
+// .padding-sm {
+//   padding: 24px 0 !important;
+//   @include desktop {
+//     padding: 22px 0 !important;
+//   }
+//   @include tablet {
+//     padding: 20px 0 !important;
+//   }
+//   @include tablet-down {
+//     padding: 15px 0 !important;
+//   }
+// }
+
+// .padding-top-sm {
+//   padding-top: 24px !important;
+//   @include desktop {
+//     padding-top: 22px !important;
+//   }
+//   @include tablet {
+//     padding-top: 20px !important;
+//   }
+//   @include tablet-down {
+//     padding-top: 15px !important;
+//   }
+// }
+
+// .padding-bottom-sm {
+//   padding-bottom: 24px !important;
+//   @include desktop {
+//     padding-bottom: 22px !important;
+//   }
+//   @include tablet {
+//     padding-bottom: 20px !important;
+//   }
+//   @include tablet-down {
+//     padding-bottom: 15px !important;
+//   }
+// }
+
+// //6.padding-xs
+// .padding-xs {
+//   padding: 16px 0 !important;
+// }
+
+// .padding-top-xs {
+//   padding-top: 16px !important;
+// }
+
+// .padding-bottom-xs {
+//   padding-bottom: 16px !important;
+// }
+
+// //7.padding-xxs
+// .padding-xxs {
+//   padding: 8px 0 !important;
+// }
+
+// .padding-top-xxs {
+//   padding-top: 8px !important;
+// }
+
+// .padding-bottom-xxs {
+//   padding-bottom: 8px !important;
+// }
+
+// //8.No Padding classes
+// .no-margin-top {
+//   margin-top: 0 !important;
+// }
+
+// .no-padding {
+//   padding-top: 0 !important;
+//   padding-bottom: 0 !important;
+// }
+
+// .no-padding-top {
+//   padding-top: 0 !important;
+// }
+
+// .no-padding-bottom {
+//   padding-bottom: 0 !important;
+// }
+
+// //9.padding-primary
+// .padding-primary {
+//   padding: 104px 0 !important;
+//   @include desktop {
+//     padding: 80px 0 !important;
+//   }
+//   @include tablet {
+//     padding: 55px 0 !important;
+//   }
+//   @include tablet-down {
+//     padding: 40px 0 !important;
+//   }
+// }
+
+// .padding-top-primary {
+//   padding-top: 104px !important;
+//   @include desktop {
+//     padding-top: 80px !important;
+//   }
+//   @include tablet {
+//     padding-top: 55px !important;
+//   }
+//   @include tablet-down {
+//     padding-top: 40px !important;
+//   }
+// }
+
+// .padding-bottom-primary {
+//   padding-bottom: 104px !important;
+//   @include desktop {
+//     padding-bottom: 88px !important;
+//   }
+//   @include tablet {
+//     padding-bottom: 55px !important;
+//   }
+//   @include tablet-down {
+//     padding-bottom: 40px !important;
+//   }
+// }
+
+// .section-overlap {
+//   .container {
+//     margin-top: -255px;
+
+//     @include large-container-down {
+//       margin-top: -199px;
+//     }
+//     @include desktop-down {
+//       margin-top: -170px;
+//     }
+//   }
+// }
