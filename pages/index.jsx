@@ -33,7 +33,6 @@ export default function Home(data) {
     tabValue(value);
   }
 
-
   return (
     <>
       <main className={styles.main}>
